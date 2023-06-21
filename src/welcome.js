@@ -28,8 +28,8 @@ const trueBtn = document.querySelector('.hero-btn.true');
 const falseBtn = document.querySelector('.hero-btn.false');
 
 trueBtn.addEventListener('click', () => {
-  window.location.href = '/task-list.html';
+  window.location.href = './task-list.html';
 });
 falseBtn.addEventListener('click', () => {
-  window.location.href = '/false.html';
+  window.location.href = './false.html';
 });
