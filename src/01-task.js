@@ -1,6 +1,7 @@
 const CODE_TASK1 = '3';
 
 const formEl = document.querySelector('.task_01_form');
+const closeButtonModal = document.querySelector('.modal-button');
 
 formEl.addEventListener('submit', e => {
   e.preventDefault();
@@ -9,8 +10,14 @@ formEl.addEventListener('submit', e => {
   const userInput = inputEl.value;
 
   if (userInput === CODE_TASK1) {
-    alert('Cool');
+    document.body.classList.add('show-modal');
+
+    localStorage.setItem('task1Completed', true);
   } else {
-    alert('No cool!!');
+    alert('Не правильний код ❌');
   }
+});
+
+closeButtonModal.addEventListener('click', () => {
+  document.body.classList.remove('show-modal');
 });

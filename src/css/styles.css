@@ -213,9 +213,9 @@ a {
   line-height: 1.5;
 }
 
-/* .task-link.locked {
+.task-link.locked {
   display: none;
-} */
+}
 
 /* TASK #1 */
 
@@ -314,6 +314,68 @@ a {
   margin-bottom: 20px;
 }
 
-/* TASK #2 */
-/* TASK #3 */
-/* TASK #4 */
+/* Modal */
+
+body.show-modal .backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+body.show-modal .modal {
+  transform: scale(1);
+}
+
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.62);
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.modal {
+  position: relative;
+  padding: 25px 25px;
+  text-align: center;
+  background-color: #d9d9d9;
+
+  max-width: 250px;
+  min-height: 320px;
+  text-align: center;
+
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-desc {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.modal-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 15px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
