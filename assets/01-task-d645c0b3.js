@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-ec808ebb.js";/* empty css               */const n="3",e=document.querySelector(".task_01_form");e.addEventListener("submit",t=>{t.preventDefault();const o=e.querySelector('input[name="code"]').value;alert(o===n?"Cool":"No cool!!")});
