@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var loginInput = document.querySelector('input[name="login"]');
     var passwordInput = document.querySelector('input[name="password"]');
 
-    var loginValue = loginInput.value;
-    var passwordValue = passwordInput.value;
+    var loginValue = loginInput.value.trim();
+    var passwordValue = passwordInput.value.trim();
 
     if (loginValue === 'admin' && passwordValue === 'password') {
       alert('Успішна авторизація. Переход на іншу сторінку...');
