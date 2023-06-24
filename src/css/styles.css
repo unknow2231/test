@@ -15,6 +15,9 @@ body {
 .container {
   max-width: 375px;
   padding: 0 15px;
+  margin: 0 auto;
+
+  overflow: hidden;
 }
 
 ul {
@@ -250,10 +253,10 @@ a {
 }
 .task_01_wrap_p {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 30px;
-  letter-spacing: 2px;
-  line-height: 1.5;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
 .task_01_wrap_lc {
   font-size: 25px;
