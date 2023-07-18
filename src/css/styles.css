@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Roboto Slab', serif;
+  background-color: rgb(211, 211, 211);
 }
 
 .container {
@@ -34,7 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 
 .welcome_bear {
@@ -61,11 +62,11 @@ a {
 }
 
 .page-welcome {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 85vh;
 }
 
 .welcome_form {
@@ -198,7 +199,6 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 
 .task-item:not(:last-child) {
