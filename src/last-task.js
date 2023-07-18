@@ -14,7 +14,7 @@ function type() {
   index++;
 
   if (index < text.length) {
-    setTimeout(type, 25); // Швидкість печатання - затримка між символами
+    setTimeout(type, 50); // Швидкість печатання - затримка між символами
   } else {
     // Після завершення набору тексту, викликаємо анімацію кнопок
     inputForm.classList.add('active');
