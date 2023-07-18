@@ -9,7 +9,8 @@
 @import url('./header.css');
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   background-color: rgb(211, 211, 211);
 }
 
@@ -105,9 +106,12 @@ a {
 }
 
 .welcome_btn {
+  color: white;
+  background-color: black;
   font-family: inherit;
   cursor: pointer;
-  border: 1px solid rgb(159, 159, 159);
+  border: none;
+
   width: 100%;
   padding: 15px 20px;
   border-radius: 20px;
